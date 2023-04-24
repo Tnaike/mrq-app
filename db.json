@@ -1,0 +1,62 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Timilehin Adenaike",
+      "yearJoined": 2012,
+      "gender": "male",
+      "status": "Active",
+      "created": "2022-03-22T14:56:29.000Z",
+      "updated": "2022-03-22T14:56:28.000Z"
+    },
+    {
+      "id": 2,
+      "name": "Rose Amber",
+      "phoneNumber": 2012,
+      "gender": "female",
+      "status": "Active",
+      "created": "2022-03-22T14:56:29.000Z",
+      "updated": "2022-03-22T14:56:28.000Z"
+    },
+    {
+      "id": 3,
+      "name": "Alice Blue",
+      "yearJoined": 2015,
+      "gender": "female",
+      "status": "Inactive",
+      "created": "2022-03-22T14:56:29.000Z",
+      "updated": "2022-03-22T14:56:28.000Z"
+    },
+    {
+      "id": 4,
+      "name": "James Sky",
+      "yearJoined": 2017,
+      "gender": "male",
+      "status": "Active",
+      "created": "2022-03-24T12:10:29.000Z",
+      "updated": "2022-03-24T12:10:29.000Z"
+    },
+    {
+      "id": 5,
+      "name": "Azeez Naike",
+      "yearJoined": 2017,
+      "gender": "male",
+      "status": "Active",
+      "created": "2022-03-24T12:15:09.000Z",
+      "updated": "2022-03-24T12:15:09.000Z"
+    },
+    {
+      "id": 6,
+      "name": "Mariam Daniels",
+      "yearJoined": 2020,
+      "gender": "female",
+      "status": "Disabled",
+      "created": "2022-02-12T16:05:09.000Z",
+      "updated": "2022-02-12T16:05:09.000Z"
+    }
+  ],
+  "page": 1,
+  "size": 10,
+  "total": 12,
+  "totalPages": 14
+}
