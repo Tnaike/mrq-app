@@ -1,5 +1,5 @@
 {
-  "data": [
+  "user": [
     {
       "id": 1,
       "name": "Timilehin Adenaike",
@@ -54,9 +54,5 @@
       "created": "2022-02-12T16:05:09.000Z",
       "updated": "2022-02-12T16:05:09.000Z"
     }
-  ],
-  "page": 1,
-  "size": 10,
-  "total": 12,
-  "totalPages": 14
+  ]
 }
