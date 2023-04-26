@@ -1,4 +1,5 @@
 .nav-wrap {
+  background-color: #3c48fc;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -8,12 +9,13 @@ nav.nav {
   align-items: center;
   gap: 20px;
   width: 100%;
-  background-color: #fff;
+  background-color: transparent;
   padding: 15px 20px;
 }
 
 nav .logo {
-  width: 250px;
+  display: flex;
+  width: 110px;
   margin-right: 20px;
 }
 
@@ -35,16 +37,15 @@ nav .logo img {
 }
 
 .nav ul li a {
-  color: #000;
+  color: #fff;
   text-decoration: none;
   font-size: 1rem;
 }
 
 .nav ul li a.active,
 .nav ul li a:hover {
-  color: #3c48fc;
+  color: #000;
 }
-
 
 @media screen and (max-width: 768px) {
   nav.nav ul {
