@@ -7,7 +7,7 @@ const ProfilePage = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:4000/user').then((response) => {
+    axios.get('http://localhost:4000/users').then((response) => {
       setData(response.data);
       setIsLoading(false);
     });
