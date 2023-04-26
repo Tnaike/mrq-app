@@ -1,15 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/logo.png';
+// import logo from '../assets/logo.png';
 import '../styles/index.css';
 
 const Nav = () => {
   return (
     <div className='nav-wrap'>
       <nav className='nav container'>
-        <div className='logo'>
+        {/* <div className='logo'>
           <img src={logo} alt='MRQ' />
-        </div>
+        </div> */}
         <ul>
           <li>
             <NavLink to='/'>Home</NavLink>
@@ -18,7 +18,7 @@ const Nav = () => {
             <NavLink to='/profile'>Profile</NavLink>
           </li>
           <li>
-            <NavLink to='/menu'>Menu</NavLink>
+            <NavLink to='/rq-profile'>QR Profile</NavLink>
           </li>
         </ul>
       </nav>
