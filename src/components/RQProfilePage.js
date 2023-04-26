@@ -1,5 +1,12 @@
+import Nav from './Nav';
+
 const RQProfilePage = () => {
-  return <div>RQ Profile Page</div>;
+  return (
+    <>
+      <Nav />
+      <h3>RQ Profile Page</h3>
+    </>
+  );
 };
 
 export default RQProfilePage;
