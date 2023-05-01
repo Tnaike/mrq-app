@@ -50,6 +50,7 @@ nav .logo img {
 .page-header {
   position: relative;
   display: flex;
+  flex-direction: column;
   padding: 30px 15px 10px;
   margin-bottom: 15px;
 }
@@ -115,6 +116,7 @@ nav .logo img {
 
 .userPosition{
   font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
   color: #777;
   margin-bottom: 15px;
@@ -130,6 +132,11 @@ nav .logo img {
     background: #f6f9fb;
     padding: 8px 12px;
     border-radius: 8px;
+}
+.userLocation {
+    color: #222ee9;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 @media screen and (max-width: 768px) {
