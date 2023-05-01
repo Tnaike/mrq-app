@@ -2,6 +2,7 @@ import Nav from './Nav';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
+import Loader from './Loader';
 import getProfileImage from '../utils/getProfileImage';
 import defaultImage from '../assets/user.png';
 import '../styles/index.css';
@@ -19,11 +20,11 @@ const ProfilePage = () => {
 
   return (
     <>
+      <Nav />
       {isLoading ? (
-        <h2 className='loading'>Loading...</h2>
+        <Loader label />
       ) : (
         <>
-          <Nav />
           <div className='container'>
             <div className='page-header'>
               <h3 className='mb-1'>Profile Page</h3>

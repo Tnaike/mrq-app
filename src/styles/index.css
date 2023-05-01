@@ -65,6 +65,7 @@ nav .logo img {
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .cards {
