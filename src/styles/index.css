@@ -47,6 +47,98 @@ nav .logo img {
   color: #000;
 }
 
+.page-header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 15px 10px;
+  margin-bottom: 15px;
+}
+
+.page-header h3 {
+  font-size: 25px;
+}
+
+.section-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.cards {
+  position: relative;
+  width: 300px;
+  min-height: 300px;
+  padding: 20px 15px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.cards .card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  width: 120px;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 1px 16px -6px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cards .card-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 15px 0;
+}
+
+.userName{
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.userPosition{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.cards .card-cs{
+  display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #f6f9fb;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+.userLocation {
+    color: #222ee9;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
 @media screen and (max-width: 768px) {
   nav.nav ul {
     display: none;
