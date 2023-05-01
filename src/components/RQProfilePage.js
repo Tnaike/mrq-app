@@ -18,7 +18,7 @@ const RQProfilePage = () => {
     <>
       <Nav />
       {isLoading ? (
-        <Loader label/>
+        <Loader label />
       ) : (
         <>
           <div className='container'>
@@ -35,8 +35,12 @@ const RQProfilePage = () => {
                     />
                   </div>
                   <div className='card-details mt-2'>
-                    <h3>{user.name}</h3>
-                    <p>{user.position}</p>
+                    <h3 className='userName'>{user.name}</h3>
+                    <p className='userPosition'>{user.position}</p>
+                    <div className='card-cs'>
+                      <p className='userEmail'>{user.email}</p>
+                      <p className='userLocation'>{user.location}</p>
+                    </div>
                   </div>
                 </div>
               ))}
