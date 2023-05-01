@@ -16,10 +16,24 @@ const RQProfilePage = () => {
       ) : (
         <>
           <Nav />
-          <h3>RQ Profile Page</h3>
-          {data?.data.map((user) => {
-            return <div key={user.id}>{user.name}</div>;
-          })}
+          <div className='container'>
+            <div className='page-header'>
+              <h3 className='mb-1'>RQ Profile Page</h3>
+            </div>
+            <div className='section-wrapper'>
+              {data?.data.map((user) => (
+                <div className='cards' key={user.id}>
+                  <div className='card-img'>
+                    <img src={user.profileImage} alt={user.name} />
+                  </div>
+                  <div className='card-details mt-2'>
+                    <h3>{user.name}</h3>
+                    <p>{user.position}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </>
       )}
     </>
