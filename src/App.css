@@ -58,6 +58,19 @@ body {
   margin-bottom: 20px;
 }
 
+.success {
+  background-color: #00dd03;
+}
+.warning {
+  background-color: #d78f00;
+}
+.danger {
+  background-color: #e01a00;
+}
+.default {
+  background-color: #222222;
+}
+
 .loadingWrap {
   display: flex;
   flex-direction: column;
@@ -72,10 +85,10 @@ body {
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .animate-spin {
-    animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
