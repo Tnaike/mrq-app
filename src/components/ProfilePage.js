@@ -11,12 +11,19 @@ import '../styles/index.css';
 const ProfilePage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    axios.get('http://localhost:4000/users').then((response) => {
-      setData(response.data);
-      setIsLoading(false);
-    });
+    axios
+      .get('http://localhost:4000/users')
+      .then((response) => {
+        setData(response.data);
+        setIsLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
@@ -26,6 +33,12 @@ const ProfilePage = () => {
         <Loader label />
       ) : (
         <>
+          {error && (
+            <div className='errorMessage container'>
+              <h3>{error}</h3>
+            </div>
+          )}
+
           <div className='container'>
             <div className='page-header'>
               <h3 className='mb-1'>Profile Page</h3>
