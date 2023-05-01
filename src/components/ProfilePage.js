@@ -1,6 +1,9 @@
 import Nav from './Nav';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+
+import getProfileImage from '../utils/getProfileImage';
+import defaultImage from '../assets/user.png';
 import '../styles/index.css';
 
 const ProfilePage = () => {
@@ -29,7 +32,10 @@ const ProfilePage = () => {
               {data.map((user) => (
                 <div className='cards' key={user.id}>
                   <div className='card-img'>
-                    <img src={user.profileImage} alt={user.name} />
+                    <img
+                      src={getProfileImage(user?.profileImage, defaultImage)}
+                      alt={user.name}
+                    />
                   </div>
                   <div className='card-details mt-2'>
                     <h3>{user.name}</h3>
