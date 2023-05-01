@@ -3,6 +3,7 @@ import { useQuery } from 'react-query';
 import axios from 'axios';
 
 import Loader from './Loader';
+import { getStatus } from '../utils';
 import getProfileImage from '../utils/getProfileImage';
 import defaultImage from '../assets/user.png';
 import '../styles/index.css';
@@ -34,6 +35,12 @@ const RQProfilePage = () => {
                       src={getProfileImage(user?.profileImage, defaultImage)}
                       alt={user.name}
                     />
+                    <div className='user-Status'>
+                      <span
+                        className={getStatus(user?.status)}
+                        title={user?.status}
+                      ></span>
+                    </div>
                   </div>
                   <div className='card-details mt-2'>
                     <h3 className='userName'>{user.name}</h3>
