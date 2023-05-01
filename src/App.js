@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { QueryClientProvider, QueryClient } from 'react-query';
+import { ReactQueryDevtools } from 'react-query/devtools';
 import './App.css';
 import HomePage from './components/HomePage';
 import ProfilePage from './components/ProfilePage';
@@ -17,6 +18,7 @@ function App() {
           <Route path='/rq-profile' element={<RQProfilePage />} />
         </Routes>
       </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
     </QueryClientProvider>
   );
 }
