@@ -71,7 +71,7 @@ body {
   background-color: #222222;
 }
 
-.loadingWrap {
+.errorMessage, .loadingWrap {
   display: flex;
   flex-direction: column;
   justify-content: center;

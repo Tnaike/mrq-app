@@ -13,7 +13,10 @@ const fetchUsersProfile = () => {
 };
 
 const RQProfilePage = () => {
-  const { isLoading, data } = useQuery('users-profile', fetchUsersProfile);
+  const { isLoading, data, isError, error } = useQuery(
+    'users-profile',
+    fetchUsersProfile
+  );
 
   return (
     <>
@@ -22,6 +25,12 @@ const RQProfilePage = () => {
         <Loader label />
       ) : (
         <>
+          {isError && (
+            <div className='errorMessage container'>
+              <h3>{error.message}</h3>
+            </div>
+          )}
+
           <div className='container'>
             <div className='page-header'>
               <h3 className='mb-1'>RQ Profile Page</h3>
