@@ -1,6 +1,7 @@
 import Nav from './Nav';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../styles/index.css';
 
 const ProfilePage = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -20,10 +21,24 @@ const ProfilePage = () => {
       ) : (
         <>
           <Nav />
-          <h3>Profile Page</h3>
-          {data.map((user) => {
-            return <div key={user.id}>{user.name}</div>;
-          })}
+          <div className='container'>
+            <div className='page-header'>
+              <h3 className='mb-1'>Profile Page</h3>
+            </div>
+            <div className='section-wrapper'>
+              {data.map((user) => (
+                <div className='cards' key={user.id}>
+                  <div className='card-img'>
+                    <img src={user.profileImage} alt={user.name} />
+                  </div>
+                  <div className='card-details mt-2'>
+                    <h3>{user.name}</h3>
+                    <p>{user.position}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </>
       )}
     </>
