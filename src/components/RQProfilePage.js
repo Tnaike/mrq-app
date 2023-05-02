@@ -1,27 +1,19 @@
 import Nav from './Nav';
-import { useQuery } from 'react-query';
-import axios from 'axios';
 
 import Loader from './Loader';
 import { getStatus } from '../utils';
 import getProfileImage from '../utils/getProfileImage';
 import defaultImage from '../assets/user.png';
 import '../styles/index.css';
-
-const fetchUsersProfile = () => {
-  return axios.get('http://localhost:4000/users');
-};
+import { useUsersData } from '../hooks/useUsersData';
 
 const RQProfilePage = () => {
-  const { isLoading, data, isError, error } = useQuery(
-    'users-profile',
-    fetchUsersProfile
-  );
+  const { isLoading, data, isError, error, isFetching } = useUsersData();
 
   return (
     <>
       <Nav />
-      {isLoading ? (
+      {isLoading || isFetching ? (
         <Loader label />
       ) : (
         <>
