@@ -50,6 +50,9 @@ const ProfilePage = () => {
                     <img
                       src={getProfileImage(user?.profileImage, defaultImage)}
                       alt={user.name}
+                      onError={(e) => {
+                        e.target.src = defaultImage;
+                      }}
                     />
                     <div className='user-Status'>
                       <span
