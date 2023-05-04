@@ -15,10 +15,10 @@ const Nav = () => {
             <NavLink to='/'>Home</NavLink>
           </li>
           <li>
-            <NavLink to='/profile'>Profile</NavLink>
+            <NavLink to='/users'>Profile</NavLink>
           </li>
           <li>
-            <NavLink to='/rq-profile'>QR Profile</NavLink>
+            <NavLink to='/rq-users'>QR Profile</NavLink>
           </li>
         </ul>
       </nav>

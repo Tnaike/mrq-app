@@ -1,4 +1,5 @@
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 import Loader from './Loader';
 import { getStatus } from '../utils';
@@ -7,7 +8,7 @@ import defaultImage from '../assets/user.png';
 import '../styles/index.css';
 import { useUsersData } from '../hooks/useUsersData';
 
-const RQProfilePage = () => {
+const RQUsersPage = () => {
   const { isLoading, data, isError, error, isFetching } = useUsersData();
 
   return (
@@ -25,7 +26,7 @@ const RQProfilePage = () => {
 
           <div className='container'>
             <div className='page-header'>
-              <h3 className='mb-1'>RQ Profile Page</h3>
+              <h3 className='mb-1'>RQ Users Page</h3>
               <p>Using reactQuery</p>
             </div>
             <div className='section-wrapper'>
@@ -47,12 +48,14 @@ const RQProfilePage = () => {
                     </div>
                   </div>
                   <div className='card-details mt-2'>
-                    <h3 className='userName'>{user.name}</h3>
+                    <Link to={`/rq-user-profile/${user.id}`}>
+                      <h3 className='userName'>{user.name}</h3>
+                    </Link>
                     <p className='userPosition'>{user.position}</p>
-                    <div className='card-cs'>
+                    {/* <div className='card-cs'>
                       <p className='userEmail'>{user.email}</p>
                       <p className='userLocation'>{user.location}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
@@ -64,4 +67,4 @@ const RQProfilePage = () => {
   );
 };
 
-export default RQProfilePage;
+export default RQUsersPage;
