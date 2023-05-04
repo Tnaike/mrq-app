@@ -7,7 +7,7 @@ import defaultImage from '../assets/user.png';
 import '../styles/index.css';
 import { useUsersData } from '../hooks/useUsersData';
 
-const RQProfilePage = () => {
+const RQUsersPage = () => {
   const { isLoading, data, isError, error, isFetching } = useUsersData();
 
   return (
@@ -64,4 +64,4 @@ const RQProfilePage = () => {
   );
 };
 
-export default RQProfilePage;
+export default RQUsersPage;
