@@ -5,6 +5,7 @@ import './App.css';
 import HomePage from './components/HomePage';
 import ProfilePage from './components/ProfilePage';
 import RQProfilePage from './components/RQProfilePage';
+import RQUserProfile from './components/RQUserProfile';
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ function App() {
           <Route path='/' element={<HomePage />} />
           <Route path='/profile' element={<ProfilePage />} />
           <Route path='/rq-profile' element={<RQProfilePage />} />
+          <Route path='/rq-user-profile/:userId' element={<RQUserProfile />} />
         </Routes>
       </BrowserRouter>
       <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
