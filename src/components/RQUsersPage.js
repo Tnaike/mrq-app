@@ -26,7 +26,7 @@ const RQUsersPage = () => {
 
           <div className='container'>
             <div className='page-header'>
-              <h3 className='mb-1'>RQ Profile Page</h3>
+              <h3 className='mb-1'>RQ Users Page</h3>
               <p>Using reactQuery</p>
             </div>
             <div className='section-wrapper'>

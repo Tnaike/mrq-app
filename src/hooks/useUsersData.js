@@ -1,14 +1,14 @@
 import { useQuery } from 'react-query';
 import axios from 'axios';
 
-export const USERS_PROFILE = 'users-profile ';
+export const USERS_LIST = 'users-list ';
 
-const fetchUsersProfile = () => {
+const fetchUsersList = () => {
   return axios.get('http://localhost:4000/users');
 };
 
 export const useUsersData = () => {
-  return useQuery([USERS_PROFILE], fetchUsersProfile, {
+  return useQuery([USERS_LIST], fetchUsersList, {
     onSuccess(data) {
       return data;
     },
