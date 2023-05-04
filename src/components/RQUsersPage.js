@@ -1,4 +1,5 @@
 import Nav from './Nav';
+import { Link } from 'react-router-dom';
 
 import Loader from './Loader';
 import { getStatus } from '../utils';
@@ -47,12 +48,14 @@ const RQUsersPage = () => {
                     </div>
                   </div>
                   <div className='card-details mt-2'>
-                    <h3 className='userName'>{user.name}</h3>
+                    <Link to={`/rq-user-profile/${user.id}`}>
+                      <h3 className='userName'>{user.name}</h3>
+                    </Link>
                     <p className='userPosition'>{user.position}</p>
-                    <div className='card-cs'>
+                    {/* <div className='card-cs'>
                       <p className='userEmail'>{user.email}</p>
                       <p className='userLocation'>{user.location}</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}
