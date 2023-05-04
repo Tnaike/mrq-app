@@ -7,7 +7,7 @@
       "gender": "male",
       "email": "timilehin.adenaike@gmail.com",
       "status": "Active",
-      "position": "Software Engineer",
+      "position": "Front-end Developer",
       "profileImage": "https://res.cloudinary.com/dt9rspla9/image/upload/v1682806881/Tnaike/Tnaike__dmv5d0.png",
       "location": "Nigeria",
       "created": "2022-03-22T14:56:29.000Z",
@@ -20,7 +20,7 @@
       "gender": "female",
       "email": "rose.amber@gmail.com",
       "status": "Active",
-      "position": "Senior Designer",
+      "position": "Product Designer",
       "profileImage": "https://res.cloudinary.com/dt9rspla9/image/upload/v1675471968/Tnaike/cld-sample.jpg",
       "location": "Kenya",
       "created": "2022-03-22T14:56:29.000Z",
@@ -54,13 +54,13 @@
     },
     {
       "id": 5,
-      "name": "Azeez Naike",
+      "name": "Michael Gilbert",
       "yearJoined": 2017,
       "gender": "male",
-      "email": "azeez.naike@gmail.com",
+      "email": "michael.gilbert@gmail.com",
       "status": "Active",
-      "position": "Front-end Developer",
-      "profileImage": "https://res.cloudinary.com/dt9rspla9/image/upload/v1682806881/Tnaike/Tnaike__dmv5d0.png",
+      "position": "Senior Software Engineer",
+      "profileImage": "https://res.cloudinary.com/dt9rspla9/image/upload/v1682903333/Tnaike/handsome-adult-male-posing_cytb2j.jpg",
       "location": "Canada",
       "created": "2022-03-24T12:15:09.000Z",
       "updated": "2022-03-24T12:15:09.000Z"
@@ -77,6 +77,19 @@
       "location": "Canada",
       "created": "2022-02-12T16:05:09.000Z",
       "updated": "2022-02-12T16:05:09.000Z"
+    },
+    {
+      "id": 7,
+      "name": "Jefferson Anil",
+      "yearJoined": 2022,
+      "gender": "male",
+      "email": "jefferson.anil@outlook.com",
+      "status": "Inactive",
+      "position": "Software Engineer",
+      "profileImage": null,
+      "location": "Kenya",
+      "created": "2022-03-24T12:10:29.000Z",
+      "updated": "2022-03-24T12:10:29.000Z"
     }
   ]
 }
