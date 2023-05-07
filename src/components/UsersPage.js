@@ -8,7 +8,7 @@ import getProfileImage from '../utils/getProfileImage';
 import defaultImage from '../assets/user.png';
 import '../styles/index.css';
 
-const ProfilePage = () => {
+const UsersPage = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [data, setData] = useState([]);
   const [error, setError] = useState('');
@@ -79,4 +79,4 @@ const ProfilePage = () => {
   );
 };
 
-export default ProfilePage;
+export default UsersPage;
