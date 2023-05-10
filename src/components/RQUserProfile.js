@@ -25,9 +25,13 @@ const RQUserProfile = () => {
               <h3 className='mb-1'>RQ Users Page</h3>
               <p>Using reactQuery</p>
             </div>
-            <div className='card-cs'>
-              <p className='userEmail'>{user?.data.email}</p>
-              <p className='userLocation'>{user?.data.location}</p>
+            <div className='card-details mt-2'>
+              <h3 className='userName'>{user.data.name}</h3>
+              <p className='userPosition'>{user.position}</p>
+              <div className='card-cs'>
+                <p className='userEmail'>{user?.data.email}</p>
+                <p className='userLocation'>{user?.data.location}</p>
+              </div>
             </div>
           </div>
         </>
