@@ -52,10 +52,6 @@ const RQUsersPage = () => {
                       <h3 className='userName'>{user.name}</h3>
                     </Link>
                     <p className='userPosition'>{user.position}</p>
-                    {/* <div className='card-cs'>
-                      <p className='userEmail'>{user.email}</p>
-                      <p className='userLocation'>{user.location}</p>
-                    </div> */}
                   </div>
                 </div>
               ))}
