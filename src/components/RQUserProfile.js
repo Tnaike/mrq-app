@@ -4,7 +4,6 @@ import { useUserData } from '../hooks/useUserData';
 import Nav from './Nav';
 import Loader from './Loader';
 import { getStatus } from '../utils';
-import getProfileImage from '../utils/getProfileImage';
 import defaultImage from '../assets/user.png';
 import '../styles/index.css';
 
